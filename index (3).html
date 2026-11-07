@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>ZK STORE — Luxury Haute Fashion Atelier | International Ready-To-Wear</title>
+  
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="ZK STORE — An international luxury fashion house. Experience 280GSM combed cottons, sculpted evening silks, bespoke shirting, and architectural tailoring in Pakistan.">
+  <meta name="keywords" content="ZK STORE, luxury fashion, designer clothing Pakistan, haute couture, oversized t-shirt, selvedge denim, silk dresses, luxury menswear, luxury womenswear">
+  <meta property="og:title" content="ZK STORE — $50,000-Level Luxury Fashion E-Commerce">
+  <meta property="og:description" content="Discover the art of effortless dressing with ZK STORE. 50 bespoke ready-to-wear pieces with complimentary nationwide express delivery.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#111111">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23111111'/><text x='50%' y='62%' font-family='Georgia, serif' font-size='44' font-weight='bold' fill='%23D8C8B5' text-anchor='middle'>ZK</text></svg>">
+
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              black: '#111111',
+              charcoal: '#292929',
+              ivory: '#F7F5F0',
+              beige: '#D8C8B5',
+              white: '#FFFFFF',
+              border: '#E8E4DC',
+              gold: '#C5A880'
+            }
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+            display: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Plus Jakarta Sans', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Canvas Confetti CDN (for checkout celebrations) -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+  <!-- Custom Luxury Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white text-[#111111] antialiased selection:bg-[#111111] selection:text-[#FFFFFF]">
+
+  <!-- Application Mount Point -->
+  <div id="app">
+    <!-- Initial Loading Skeleton (Replaced immediately by application) -->
+    <div class="min-h-screen flex flex-col items-center justify-center bg-[#111111] text-white">
+      <div class="text-center space-y-4 animate-pulse">
+        <span class="font-serif text-4xl sm:text-5xl tracking-[0.25em] font-medium text-[#F7F5F0] uppercase block">
+          ZK STORE
+        </span>
+        <span class="font-sans text-[10px] tracking-[0.45em] text-[#D8C8B5] uppercase block">
+          HAUTE LUXURY ATELIER
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Micro-Notification Container -->
+  <div id="toast-container"></div>
+
+  <!-- Universal Linked Script (Works via Live Server, Localhost & Direct file:// Double-Click) -->
+  <script src="dist/bundle.js"></script>
+</body>
+</html>
